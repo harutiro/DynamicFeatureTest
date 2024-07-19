@@ -47,6 +47,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    dynamicFeatures += setOf(":app:dynamicfeature")
 }
 
 dependencies {
@@ -66,4 +67,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.play.services.instantapps)
 }
